@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #f4f4f9, #e0e0e0);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+li span {
+  flex-grow: 1;
+}
+
+li button {
+  background-color: #dc3545;
+  margin-top: 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #777;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para mensagens de "nenhum item encontrado" */
+.no-items {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.no-items.visible {
+  opacity: 1;
+}
+
+/* Estilos adicionais para responsividade */
+@media (max-width: 600px) {
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  li {
+    padding: 10px;
+  }
+}

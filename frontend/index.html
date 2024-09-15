@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Estacionamento</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Criar Veículo</h2>
+      <form id="create-vehicle-form">
+        <input type="text" id="make" placeholder="Marca" required>
+        <input type="text" id="model" placeholder="Modelo" required>
+        <input type="number" id="year" placeholder="Ano" required>
+        <input type="number" id="price" placeholder="Preço" required>
+        <button type="submit">Criar Veículo</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Veículos</h2>
+      <button id="get-vehicles">Listar Veículos</button>
+      <ul id="vehicles-list"></ul>
+      <p id="no-vehicles" class="no-items">Nenhum veículo encontrado.</p>
+    </section>
+
+    <section>
+      <h2>Criar Vaga de Estacionamento</h2>
+      <form id="create-parking-spot-form">
+        <input type="text" id="spot-number" placeholder="Número da Vaga" required>
+        <button type="submit">Criar Vaga</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Vagas de Estacionamento</h2>
+      <button id="get-parking-spots">Listar Vagas</button>
+      <ul id="parking-spots-list"></ul>
+      <p id="no-parking-spots" class="no-items">Nenhuma vaga encontrada.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Gestão de Estacionamento. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
