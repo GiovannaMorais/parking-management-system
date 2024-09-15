@@ -1,0 +1,28 @@
+# Diretórios de dependências
+node_modules/
+
+# Diretórios de build
+dist/
+build/
+
+# Arquivos de ambiente
+.env
+
+# Diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDEs
+.vscode/
+.idea/
+*.swp
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Diretórios de cache do Python
+__pycache__/
+
+# Diretório de instância do Flask
+instance/
